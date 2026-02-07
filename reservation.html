@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation | Élan</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reservation.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+  <div class="logo">ÉLAN</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+  <div class="reservation-background">
+    <div class="reservation-box">
+      <h1>Book a Table</h1>
+      <form action="thankyou.html" method="get">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+90 555 555 55 55">
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Number of Guests</label>
+        <select id="guests" name="guests" required>
+          <option value="">Select...</option>
+          <option value="1">1 Person</option>
+          <option value="2">2 People</option>
+          <option value="3">3 People</option>
+          <option value="4">4 People</option>
+          <option value="5+">5+ People</option>
+        </select>
+
+        <button type="submit" class="btn">Reserve Now</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Élan Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
